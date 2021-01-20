@@ -125,6 +125,11 @@ button.sauts {
   position:absolute;
   top:1px;
   right:3px;
+  animation: sauts 1s linear infinite;
+}
+
+@keyframes sauts {  
+  50% { opacity: 0; }
 }
 
    /* "height" = hauteur, "width" = largeur */
