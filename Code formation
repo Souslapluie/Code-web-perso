@@ -1,0 +1,157 @@
+<!-- Objectifs (Si d'autres idées vous viennent à l'esprit, ne pas hésiter) :
+
+
+- Faire clignoter le bouton du virus en rouge et noir, switchant les deux couleurs entre elles
+
+- Modifier l'icône du curseur de la souris pour instaurer la peur et la destruction chez l'individu osant défier le site, pensant que le bouton du virus était un troll
+
+- Ne pas vraiment mettre de virus dans le bouton
+
+- Faire en sorte que le site soit acceptable aussi bien sur mobile que sur ordinateur
+
+- Faire en sorte que la tête du personnage soit visible, plusieurs paramètres entrent en compte comme la taille de l'écran avec la taille affichée de l'image de fond, peut-être mettre des colonnes dans la page pour que le texte reste cadré
+
+- Retirer la vidéo Youtube et ne garder que la musique pour l'implanter dans le site lors de l'ouverture de la page, et mettre un bouton permettant d'arrêter la musique (Nom de la musique = Ymir theme)
+
+- Si c'est possible de le faire hors ligne, faire en sorte que le site soit considéré comme sécurité avec un "https" au début au lieu d'un "http"
+
+- Rajouter des informations sur le personnage de Peak Finger de l'Attaque des Titans
+
+- Mettre des comparaisons d'images entre la série animé et les dessins du manga, soit en les mettant côtes à côtes, soit en mettant un bouton pour afficher l'un à la place de l'autre 
+
+- Faire des formulaires avec des questionnaires dans une autre page dédiée référencée sur le site, soit sous forme de bouton soit sous forme de texte à écrire, et récupérer les données en utilisant PHP et les stocker avec le SQL afin de cumuler les résultats tout en mettant la possibilité de voir qui a posté (pour les gens chauds)
+
+- Mettre l'obligation de créer un compte avant de répondre aux questions (avec juste pseudo / mot de passe)
+
+- Faire en sorte que le site se souvienne du mot de passe à la place de l'utilisateur, et lui proposer de l'écrire automatiquement en cliquant sur "oui" lorsqu'il cliquera sur le formulaire où il rentre ses informations
+
+- Chiffrer le mot de passe 
+
+- Lorsqu'on appuie sur Ctrl (gauche) + molette de la souris, et qu'on dé-zoom, le gros texte encadré du milieu se déforme et on voit que l'image de fond est en multiples exemplaires pour recouvrir toute la page, voir si le texte qui se déforme est problématique et comment faire pour que l'image de fond n'aparaisse qu'une fois, pour mettre d'autres choses lorsqu'on aura la possibilité de scroll la page vers le bas
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<!-- <link rel="stylesheet" href="trop stylé le parpaing frère.css">
+
+(Possible de copier le CSS présent de la ligne 108 à 152 entre les balises <style>, pour pouvoir le mettre dans un bloc note ou un autre onglet avec 
+"Ctrl" + "n" pour séparer le CSS du reste et enlever les balises au bout de ces lignes pour que ça ne soit plus considéré comme un commentaire pour l'humain qui lit mais un code pour l'ordinateur)-->
+
+</head>
+
+
+<body>
+
+<!-- Balise <script> = langage JavaScript, permettant dans ce cas d'afficher un pop-up lorsque certains éléments définis en dehors de la balise script seront cliqués sur la page, comme le bouton virus ou l'image de la boucle -->
+
+	<script>
+		function toto(varColor){
+			let ttt = "la couleur est " + varColor;
+			alert(ttt);
+		}
+			function chargt(){
+			alert("chargement effectué");
+		}
+	</script>
+
+<!-- Il est possible que certaines balises <div> .... </div> n'étaient pas forcément nécessaires -->
+<!-- Balises <u> ... </u> = souligner le texte -->
+
+<div class="encadré"> <h1> <u> Peak, la plus belle femme ayant le titan le plus moche </u> </h1> </div>
+
+<!-- Balise <pre> ... </pre> = Affiche le texte tel qu'il est écrit sur la page, avec sauts de ligne, mais créé parfois des traits non voulus sur la page lorsque la balise commence avec directement un saut de ligne, la balise </br> est préférée pour descendre de position son texte -->
+
+<div> <button class="sauts" type="button"   onclick="toto('rouge');"> <pre> Virus gratuit à exécuter 
+avec autorisation des
+droits d'administrateurs. 
+Aimez-vous vivre dans le risque ?
+Vous aurez 5 minutes pour le contrer. 
+(Nous ne nous tenons pas responsables
+en cas d'incendie provoquée par :
+la destruction de votre ordinateur via
+le virus à la fin du temps imparti). </pre>
+</button> </div>
+
+<!-- Balises <s> ... </s> = Barrer un texte -->
+
+<div class="concu"> </br> <pre> <s>Même si elle se fait probablement déboîter par Annie ou Mikasa, </s> elle n'en reste pas moins innofensive, 
+pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La boucle...  </pre> </div> 
+<img id="boucle" src="https://image.noelshack.com/fichiers/2020/15/2/1586276204-laboucle2.png" onclick="toto('bleu');">
+
+<!-- balise <iframe> = code venant de Youtube, de l'onglet "partager" puis "intégrer" puis copier / coller, permettant d'implanter une vidéo sur la page avec des options de Youtube, l'objectif futur étant de faire en sorte qu'uniquement la musique ne soit retenue pour qu'elle se lance automatiquement à l'ouverture de la page, avec possibilité de couper la musique, peut-être en Javascript -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VtguFyOdj2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- Balise </br> = saut de ligne -->
+
+</br>
+</br>
+
+<p> <u> Liens pour aider dans les recherches : </u> </p>
+
+<a class="liens" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607616-utilisez-le-responsive-design-avec-les-media-queries"> <U> Lien pour faire en sorte que le site soit visible sur un maximum d'écrans (mobiles compris) avec "media query" et le "responsive design"  ici </U> </a> 
+
+</br>
+</br>
+
+<a class="liens" href="https://codepen.io/JefReb/pen/qXdmLm"> <U> Lien pour faire clignoter un bouton </U> </a>
+
+<!-- Code CSS entre les balises <style> ... </style> : -->
+
+<style> 
+
+body {
+	background-image:url(https://i.pinimg.com/originals/d1/59/69/d15969a43e8d212fe7f0c92aad8dea94.jpg);
+	color:black;
+}
+
+/* commande "font-size:" = taille du texte définie par la commande "15px;" qui définit le nombre de pixels */
+
+div.concu {
+	font-size:15px;
+	color:black;
+}
+	/* "position:absolute" + "top" + "right" = place l'élément à un endroit précis de la page, mais est problématique car la taille de l'écran n'est pas la même pour tous les ordinateurs, l'objectif futur étant de corriger ça, probablement avec le "reponsive design" et les requêtes CSS "media" */
+
+button.sauts {
+  background-color:black;
+  color:red;
+  white-space:pre; 
+  position:absolute;
+  top:1px;
+  right:3px;
+}
+
+   /* "height" = hauteur, "width" = largeur */
+
+img#boucle {
+	height:200px;
+	width:300px;
+}
+
+/* "padding" = contour du texte avec la couleur de "background-color" 
+    "margin-..." = utilisé pour que le contour du texte ne fasse pas toute la largeur de la page */
+
+div.encadré {
+	color:white;
+    padding:10px;
+	background-color:black;
+	text-align:center;
+	margin-left:25%;
+	margin-right:25%;
+} 
+
+.liens {
+  color:black;
+  background-color:purple;
+  padding:3px;
+
+</style>
+
+</body>
+</html>
