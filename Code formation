@@ -29,6 +29,8 @@
 
 - Lorsqu'on appuie sur Ctrl (gauche) + molette de la souris, et qu'on dé-zoom, le gros texte encadré du milieu se déforme et on voit que l'image de fond est en multiples exemplaires pour recouvrir toute la page, voir si le texte qui se déforme est problématique et comment faire pour que l'image de fond n'aparaisse qu'une fois, pour mettre d'autres choses lorsqu'on aura la possibilité de scroll la page vers le bas
 
+- Chercher s'il y a un moyen de faire des sauts de lignes automatiquement entre certains codes, sans devoir mettre 2 balises </br> à chaque fois
+
 -->
 
 <!DOCTYPE html>
@@ -67,15 +69,15 @@
 
 <!-- Balise <pre> ... </pre> = Affiche le texte tel qu'il est écrit sur la page, avec sauts de ligne, mais créé parfois des traits non voulus sur la page lorsque la balise commence avec directement un saut de ligne, la balise </br> est préférée pour descendre de position son texte -->
 
-<div> <button class="sauts" type="button"   onclick="toto('rouge');"> <pre> Virus gratuit à exécuter 
+<div> <button class="sauts" type="button"   onclick="toto('rouge');"> <pre> <b> Virus gratuit à exécuter 
 avec autorisation des
 droits d'administrateurs. 
 Aimez-vous vivre dans le risque ?
 Vous aurez 5 minutes pour le contrer. 
 (Nous ne nous tenons pas responsables
-en cas d'incendie provoquée par :
+en cas d'incendie provoqué par :
 la destruction de votre ordinateur via
-le virus à la fin du temps imparti). </pre>
+le virus à la fin du temps imparti). </b> </pre>
 </button> </div>
 
 <!-- Balises <s> ... </s> = Barrer un texte -->
@@ -136,18 +138,18 @@ div.concu {
 
 button.sauts {
   background-color:black;
-  color:red;
+  color:#B22222;
   white-space:pre; 
   position:absolute;
   top:1px;
   right:3px;
-  animation: sauts 1s linear infinite;
-
+  animation:DANGER 1.5s infinite;
 }
 
-@keyframes sauts {  
-  50% { opacity: 0; }
-}
+@keyframes DANGER {
+	0% {  }
+	100% {color:black; background-color:#B22222;}
+}                                                                                                                                  
 
    /* "height" = hauteur, "width" = largeur */
 
