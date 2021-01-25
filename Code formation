@@ -80,6 +80,13 @@ la destruction de votre ordinateur via
 le virus à la fin du temps imparti). </b> </pre>
 </button> </div>
 
+<!-- ma navigation en mode écran (le texte ne s'afficheront que sur des écrans de plus de 600 pixels, probablement télé ou ordi) -->
+  <nav id="ecran">menu de navigation avec des liens <a href="">toto</a> <a href="">titi</a> <a href="">tata</a></nav> 
+    
+
+    <!-- ma navigation en mode mobile ( l'image des 3 barres horizontales ne s'afficheront que sur des écrans de moins de 600 pixels, probablement sur mobile) -->    
+    <nav id="mobile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png" height="50px" width="50px">affichage du menu en mode kebab ou burger, wrap, sandwiche...</nav> 
+
 <!-- Balises <s> ... </s> = Barrer un texte -->
 
 <div class="concu"> </br> <pre> <s>Même si elle se fait probablement déboîter par Annie ou Mikasa, </s> elle n'en reste pas moins innofensive, 
@@ -124,9 +131,22 @@ pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La b
 <style> 
 
 body {
-	background-image:url(https://i.pinimg.com/originals/d1/59/69/d15969a43e8d212fe7f0c92aad8dea94.jpg);
+	background-image:url(Peak.jpg);
 	color:black;
 }
+
+/* cas général écran (fait par les autres de la formation pour responsive design) */ 
+
+#ecran { visibility: visible;}
+#mobile { visibility: hidden;}
+
+/* lorsque l'affichage du média est testé en dessous de 600 */ 
+
+ @media (max-width: 600px) {
+  #ecran { visibility: hidden;}
+  #mobile { visibility: visible;}
+} 
+/* fin du CSS des autres */
 
 /* commande "font-size:" = taille du texte définie par la commande "15px;" qui définit le nombre de pixels */
 
