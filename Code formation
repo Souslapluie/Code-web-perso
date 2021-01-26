@@ -45,37 +45,46 @@
 "Ctrl" + "n" pour séparer le CSS du reste et enlever les balises au bout de ces lignes pour que ça ne soit plus considéré comme un commentaire pour l'humain qui lit mais un code pour l'ordinateur) -->
 
 </head>
-<body>
 
 <!-- Balise <script> = langage JavaScript, permettant dans ce cas d'afficher un pop-up lorsque certains éléments définis en dehors de la balise script seront cliqués sur la page, comme le bouton virus ou l'image de la boucle -->
 
 	<script>
-		function toto(varColor){
-			let ttt = "la couleur est " + varColor;
-			alert(ttt);
-		}
-			function chargt(){
-			alert("chargement effectué");
-		}
+	function toto(varColor){
+		let ttt = "Je n'ai aucune preuve de l'existence de l'humanité avant ma naissance. De ce fait, " + varColor;
+		alert(ttt);
+	}
+		
+
+	var cpt=0;
 
 	function Permut(){
-			 var uppercut = document.getElementsByClassName('sauts');
-			  uppercut[0].style.backgroundColor = "#B22222";
-			 uppercut[0].style.color = "black";
-			}
-window.onload = function(){ setInterval(Permut, 500); };
+		
+		var uppercut = document.getElementById('sauts');
+		if (cpt%2 == 0 ){
+			uppercut.style.backgroundColor = "#B22222";
+			uppercut.style.color = "black";
+		} else {
+ 			uppercut.style.backgroundColor = "black";
+  			uppercut.style.color = "#B22222";
+		}
+
+		cpt++;
+
+	}
 
 	</script>
-
+<body onload = 'setInterval(function(){ Permut(); }, 500);'>
 <!-- Il est possible que certaines balises <div> ... </div> n'étaient pas forcément nécessaires (vérifier à enlever le div du CSS si un div du HTML est enlevé) -->
 
 <!-- Balises <u> ... </u> = souligner le texte -->
 
-<div class="encadré"> <h1> <u> Peak, la plus belle femme ayant le titan le plus moche </u> </h1> </div>
+<div id="encadré"> <h1> <u> Peak, la plus belle femme ayant le titan le plus moche </u> </h1> </div>
 
 <!-- Balise <pre> ... </pre> = Affiche le texte tel qu'il est écrit sur la page, avec sauts de ligne, mais créé parfois des traits non voulus sur la page lorsque la balise commence avec directement un saut de ligne, la balise </br> est préférée pour descendre de position son texte -->
 
-<button class="sauts" type="button" onload="Permut()" onclick="toto('rouge');"> <pre> Virus gratuit à exécuter 
+<button id="sauts" onclick="toto('l&lsquo;humanité n&lsquo;a jamais existé avant ma naissance.' +
+ ' La Terre, en revanche, existe depuis un peu plus de 2021 ans.');"> 
+<pre> Virus gratuit à exécuter 
 avec autorisation des
 droits d'administrateurs. 
 Aimez-vous vivre dans le risque ?
@@ -143,19 +152,14 @@ div.concu {
 }
 	/* "position:absolute" + "top" + "right" = place l'élément à un endroit précis de la page, mais est problématique car la taille de l'écran n'est pas la même pour tous les ordinateurs, l'objectif futur étant de corriger ça, probablement avec le "reponsive design" et les requêtes CSS "media" */
 
-.sauts {
+#sauts {
   background-color:black;
   color:#B22222;
   white-space:pre; 
   position:absolute;
   top:1px;
   right:3px; }
-/*  animation:DANGER 1.5s infinite;
-}
-
-@keyframes DANGER {
-	100% {color:black; background-color:#B22222;}
-}                    */                                                                                                               
+                                                                                                              
 
    /* "height" = hauteur, "width" = largeur */
 
@@ -167,7 +171,7 @@ img#boucle {
 /* "padding" = contour du texte avec la couleur de "background-color" 
     "margin-..." = utilisé pour que le contour du texte ne fasse pas toute la largeur de la page */
 
-div.encadré {
+div#encadré {
 	color:white;
     padding:10px;
 	background-color:black;
