@@ -1,6 +1,6 @@
 <!-- Objectifs (Si d'autres idées vous viennent à l'esprit, ne pas hésiter) :
 
-"㉿ - ... ㉿" = Problème réglé.
+" ㉿ - ... ㉿ " = Problème réglé.
 
 ㉿ - Faire clignoter le bouton du virus en rouge et noir, switchant les deux couleurs entre elles ㉿
 
@@ -8,11 +8,13 @@
 
 - Ne pas vraiment mettre de virus dans le bouton
 
+- Mettre disponible le site en anglais, avec un bouton pour régler la langue, et mettre une 3eme langue qui n'existe pas avec un texte troll pour voir si c'est possible
+
 - Faire en sorte que le site soit acceptable aussi bien sur mobile que sur ordinateur (reponsive design / media queries) (le code "position:absolute" n'est pas adapté lorsqu'on veut afficher sur un maximum d'écran, il est possible qu'il va falloir enlever ce code pour le remplacer)
 
 - Faire en sorte que la tête du personnage soit visible sur l'image de fond , plusieurs paramètres entrent en compte comme la taille de l'écran avec la taille affichée de l'image de fond, peut-être mettre des colonnes dans la page pour que le texte reste cadré
 
-- Retirer la vidéo Youtube et ne garder que la musique pour l'implanter dans le site lors de l'ouverture de la page, et mettre un bouton permettant d'arrêter la musique (Nom de la musique = Ymir theme)
+- Retirer la vidéo Youtube et ne garder que la musique pour l'implanter dans le site lors de l'ouverture de la page ("onload" en javascript pour ouverture de la page), et mettre un bouton permettant d'arrêter la musique (Nom de la musique = Ymir theme)
 
 - Si c'est possible de le faire hors ligne, faire en sorte que le site soit considéré comme sécurisé avec un "https" au début de l'url au lieu d'un "http"
 
