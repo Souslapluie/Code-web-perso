@@ -1,6 +1,6 @@
 <!-- Objectifs (Si d'autres idées vous viennent à l'esprit, ne pas hésiter) :
 
-" ㉿ - ... ㉿ " = Problème réglé.
+㉿ "- ... " ㉿ = Problème réglé.
 
 ㉿ - Faire clignoter le bouton du virus en rouge et noir, switchant les deux couleurs entre elles ㉿
 
@@ -8,7 +8,7 @@
 
 - Ne pas vraiment mettre de virus dans le bouton
 
-- Mettre disponible le site en anglais, avec un bouton pour régler la langue, et mettre une 3eme langue qui n'existe pas avec un texte troll pour voir si c'est possible
+- Mettre disponible le site en anglais, avec un bouton pour régler la langue, et mettre une langue qui n'existe pas avec un texte troll pour voir si c'est possible
 
 - Faire en sorte que le site soit acceptable aussi bien sur mobile que sur ordinateur (reponsive design / media queries) (le code "position:absolute" n'est pas adapté lorsqu'on veut afficher sur un maximum d'écran, il est possible qu'il va falloir enlever ce code pour le remplacer)
 
@@ -75,13 +75,20 @@
 
 	}
 
+
 	</script>
 <body onload = 'setInterval(function(){ Permut(); }, 500);'>
+
 <!-- Il est possible que certaines balises <div> ... </div> n'étaient pas forcément nécessaires (vérifier à enlever le div du CSS si un div du HTML est enlevé) -->
 
 <!-- Balises <u> ... </u> = souligner le texte -->
 
 <div id="encadré"> <h1> <u> Peak, la plus belle femme ayant le titan le plus moche </u> </h1> </div>
+
+<!-- "controls" = mettre la barre pour gérer la musique, "loop" = musique se répète en boucle, "autoplay" = lance automatiquement la musique, mais ne fonctionne pas toujours à cause du navigateur décidant de bloquer la musique par défaut -->
+
+<audio id="Ymir" controls="controls" loop="loop" autoplay>
+	 <source src="Ymir_Theme.mp3"> </audio>
 
 <!-- Balise <pre> ... </pre> = Affiche le texte tel qu'il est écrit sur la page, avec sauts de ligne, mais créé parfois des traits non voulus sur la page lorsque la balise commence avec directement un saut de ligne, la balise </br> est préférée pour descendre de position son texte -->
 
@@ -98,45 +105,45 @@ la destruction de votre ordinateur via
 le virus à la fin du temps imparti).  </pre>
 </button> 
 
-
+</br>
 <!-- Balises <s> ... </s> = Barrer un texte -->
 
-<div class="concu"> </br> <pre> <s>Même si elle se fait probablement déboîter par Annie ou Mikasa, </s> elle n'en reste pas moins innofensive, 
+<div class="concu"> <pre> <s>Même si elle se fait probablement déboîter par Annie ou Mikasa, </s> elle n'en reste pas moins innofensive, 
 pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La boucle...  </pre> </div> 
 <img id="boucle" src="https://image.noelshack.com/fichiers/2020/15/2/1586276204-laboucle2.png" onclick="toto('bleu');">
 
 <!-- balise <iframe> = code venant de Youtube, de l'onglet "partager" puis "intégrer" puis copier / coller, permettant d'implanter une vidéo sur la page avec des options de Youtube, l'objectif futur étant de faire en sorte qu'uniquement la musique ne soit retenue pour qu'elle se lance automatiquement à l'ouverture de la page, avec possibilité de couper la musique, peut-être en Javascript -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VtguFyOdj2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VtguFyOdj2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ( = Code pour afficher vidéo youtube à la page ) -->
 
-<!-- Balise </br> = saut de ligne -->
+<!-- Balise </br> = saut de ligne, mettre plusieurs fois la même balise dans la même ligne = plusieurs sauts de ligne -->
 
-</br>
-</br>
+</br></br>
 
 <p> <u> Liens pour aider dans les recherches (Clic droit + "ouvrir dans un nouvel onglet" pour garder la page du site) : </u> </p>
 
 <a class="liens" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607616-utilisez-le-responsive-design-avec-les-media-queries"> <U> Lien pour faire en sorte que le site soit visible sur un maximum d'écrans (mobiles compris) avec "media query" et le "responsive design"  ici </U> </a> 
 
-</br>
-</br>
+</br></br>
 
-<a class="liens" href="https://codepen.io/JefReb/pen/qXdmLm"> <U> Lien pour faire clignoter un bouton en faisant passer en arrière puis en premier plan un élément </U> </a>
+<a class="liens" href="https://codepen.io/JefReb/pen/qXdmLm"> <U> ㉿ Lien pour faire clignoter un bouton en faisant passer en arrière puis en premier plan un élément ㉿ </U> </a>
 
-</br>
-</br>
+</br></br>
 
 <a class="liens" href="https://www.youtube.com/watch?v=2H602-zG62w"> <u> Lien Youtube pour les grilles pour placer précisément des éléments en CSS </u> </a>
 
-</br>
-</br>
+</br></br>
 
 <a class="liens" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout"> <u> Lien non youtube pour les grilles en CSS, pour des infos pour placer des éléments sans devoir se taper les 30 mins de la vidéo, même si les deux peuvent aller ensemble </u> </a>
 
-</br>
-</br>
+</br></br>
 
 <a class="liens" href="https://www.jeuxvideo.com/forums/42-51-65182005-2-0-1-0-venez-apprendre-la-cybersecurite.htm"> <u> Lien pour se renseigner sur le chiffrement de mot de passe (descendre un peu la page) </u> </a>
+
+</br> </br>
+
+<a class="liens" href="https://stackoverflow.com/questions/14356956/playing-audio-after-the-page-loads-in-html/14357365"> <u> Lien pour mettre une musique lors de l'ouverture de la page avec javascript </u> </a>
+
 
 <!-- Code CSS entre les balises <style> ... </style> : -->
 
@@ -147,6 +154,11 @@ body {
 	color:black;
 }
 
+#Ymir {
+	position:absolute;
+	left:70px;
+	top:40px;
+}
 /* commande "font-size:" = taille du texte définie par la commande "15px;" qui définit le nombre de pixels */
 
 div.concu {
@@ -160,8 +172,8 @@ div.concu {
   color:#B22222;
   white-space:pre; 
   position:absolute;
-  top:1px;
-  right:3px; }
+  top:2px;
+  right:5px; }
                                                                                                               
 
    /* "height" = hauteur, "width" = largeur */
