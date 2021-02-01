@@ -87,7 +87,7 @@
 
 <!-- "controls" = mettre la barre pour gérer la musique, "loop" = musique se répète en boucle, "autoplay" = lance automatiquement la musique, mais ne fonctionne pas toujours à cause du navigateur décidant de bloquer la musique par défaut -->
 
-<audio id="Ymir" controls="controls" loop="loop" autoplay>
+<audio id="Ymir" controls loop autoplay>
 	 <source src="Ymir_Theme.mp3"> </audio>
 
 <!-- Balise <pre> ... </pre> = Affiche le texte tel qu'il est écrit sur la page, avec sauts de ligne, mais créé parfois des traits non voulus sur la page lorsque la balise commence avec directement un saut de ligne, la balise </br> est préférée pour descendre de position son texte -->
@@ -143,6 +143,10 @@ pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La b
 </br> </br>
 
 <a class="liens" href="https://stackoverflow.com/questions/14356956/playing-audio-after-the-page-loads-in-html/14357365"> <u> Lien pour mettre une musique lors de l'ouverture de la page avec javascript </u> </a>
+
+</br> </br>
+
+<a class="liens" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table"> <u> Lien pour faire des tableaux en HTML / CSS </u> </a>
 
 
 <!-- Code CSS entre les balises <style> ... </style> : -->
