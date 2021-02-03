@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title> Parcours Tremplin Numérique : Toulon </title>
+</head>
+<body>
+
+	<div id="centrage1">
+
+		<img class="logo" src="logo o'matik.png">
+		<img class="logo" src="OEUF.PNG"> </div>
+
+	<div id="centrage2">
+<table>
+
+		<thead>
+			<tr>
+				<th colspan="2"> Nuage partenaire "hover" </th>
+			</tr>
+		</thead>
+
+<tbody>
+
+	<tr>
+		<td> <a href="https://www.europe-en-france.gouv.fr/fr/fonds-europeens/initiative-pour-lemploi-des-jeunes-IEJ"> <img src="europe_emploi.png"> </a> </td>
+		<td> <a href="https://europa.eu/european-union/index_fr"> <img src="ue.png"> </a> </td>
+	</tr>
+
+	<tr>
+		<td> <a href="https://www.la-seyne.fr/"> <img src="seyne_sur_mer.png"> </a> </td>
+		<td>  <a href="https://www.ampmetropole.fr/"> <img src="amp.png"> </a> &nbsp; &nbsp; 
+		&nbsp; &nbsp; <a href="https://www.caf.fr/allocataires/caf-du-var/accueil"> <img src="caf.png"> </a> </td>
+	</tr>
+
+</tbody> </table> </div>
+
+<h1> <u> Présentation de la formation Tremplin Numérique </u> </h1>
+
+</br> </br> </br>
+
+<a href="https://twitter.com/toulon_o"> <img class="Twitter" src="Twitter_bird.svg.png"> </a>
+
+<pre> test test test tes t tes tes testes tes tes tes test ers test est 
+
+tete tes tvestesvtesvt tvesvt test tes t est est 
+
+tes tes te test TEST test 
+test
+test
+test        test voila</pre> 
+
+<a href="https://www.youtube.com/watch?v=qmRnuDwDtJg"> <img class="Facebook" src="LogoFB.jpg"> </a>
+
+
+<style>
+
+	body {
+		background-color:brown;
+		color:white;
+	}
+
+	table {
+		border: 20px solid rgb(190, 190, 190);
+	}
+
+	h1 {
+		position:relative;
+		left:25%;
+	}
+
+	#centrage1 {
+		position:relative;
+		left:42%;
+	}
+
+	#centrage2 {
+	position:relative;
+	left:35%;
+}
+	.logo {
+		height:100px;
+		width:100px;
+	}
+
+	th {
+		font-size:25px;
+	}
+
+	td {
+    /* border: 3px solid rgb(190, 190, 190); */
+    padding: 10px;
+}
+	
+	.Twitter {
+		height:50px;
+		width:50px;
+
+		-webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+
+	}
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+	.Facebook {
+		height:50px;
+		width:50px;
+
+		-webkit-animation: spinda 1.5s linear infinite;
+  -moz-animation: spinda 1.5s linear infinite;
+  animation: spinda 1.5s linear infinite;
+	}
+
+@-moz-keyframes spinda {
+  100% { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spinda {
+  100% { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spinda {
+  100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+
+table::before,
+table::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  transform: scale(1.02);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 20s infinite;
+}
+
+</style>
+
+
+</body>
+</html>
