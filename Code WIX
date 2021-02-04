@@ -8,8 +8,8 @@
 
 	<div id="centrage1">
 
-		<img class="logo" src="logo o'matik.png">
-		<img class="logo" src="OEUF.PNG"> </div>
+		<img class="logo" src="images/logo o'matik.png">
+		<img class="logo" src="images/OEUF.PNG"> </div>
 
 	<div id="centrage2">
 <table>
@@ -23,14 +23,14 @@
 <tbody>
 
 	<tr>
-		<td> <a href="https://www.europe-en-france.gouv.fr/fr/fonds-europeens/initiative-pour-lemploi-des-jeunes-IEJ"> <img src="europe_emploi.png"> </a> </td>
-		<td> <a href="https://europa.eu/european-union/index_fr"> <img src="ue.png"> </a> </td>
+		<td> <a href="https://www.europe-en-france.gouv.fr/fr/fonds-europeens/initiative-pour-lemploi-des-jeunes-IEJ"> <img src="images/europe_emploi.png"> </a> </td>
+		<td> <a href="https://europa.eu/european-union/index_fr"> <img src="images/ue.png"> </a> </td>
 	</tr>
 
 	<tr>
-		<td> <a href="https://www.la-seyne.fr/"> <img src="seyne_sur_mer.png"> </a> </td>
-		<td>  <a href="https://www.ampmetropole.fr/"> <img src="amp.png"> </a> &nbsp; &nbsp; 
-		&nbsp; &nbsp; <a href="https://www.caf.fr/allocataires/caf-du-var/accueil"> <img src="caf.png"> </a> </td>
+		<td> <a href="https://www.la-seyne.fr/"> <img src="images/seyne_sur_mer.png"> </a> </td>
+		<td>  <a href="https://www.ampmetropole.fr/"> <img src="images/amp.png"> </a> &nbsp; &nbsp; 
+		&nbsp; &nbsp; <a href="https://www.caf.fr/allocataires/caf-du-var/accueil"> <img src="images/caf.png"> </a> </td>
 	</tr>
 
 </tbody> </table> </div>
@@ -39,34 +39,41 @@
 
 </br> </br> </br>
 
-<a href="https://twitter.com/toulon_o"> <img class="Twitter" src="Twitter_bird.svg.png"> </a>
+<a href="https://twitter.com/toulon_o"> <img class="Twitter" src="images/Twitter_bird.svg.png"> </a>
+<a href="https://www.youtube.com/watch?v=qmRnuDwDtJg"> <img class="Facebook" src="images/LogoFB.jpg"> </a>
 
-<pre> test test test tes t tes tes testes tes tes tes test ers test est 
+<pre class="texte"> test test test tes t tes tes testes tes tes tes test ers test est 
 
 tete tes tvestesvtesvt tvesvt test tes t est est 
 
 tes tes te test TEST test 
 test
 test
-test        test voila</pre> 
-
-<a href="https://www.youtube.com/watch?v=qmRnuDwDtJg"> <img class="Facebook" src="LogoFB.jpg"> </a>
-
+test        test voila </pre>
 
 <style>
 
+	.texte {
+		text-align:center;
+		font-size:15px;
+		border:2px solid white;
+		margin-left:20%;
+		margin-right:20%;
+	}
+
 	body {
-		background-color:brown;
+		background-color:black;
 		color:white;
 	}
 
 	table {
-		border: 20px solid rgb(190, 190, 190);
+		border: 4mm ridge rgba(170, 50, 220, .6);
 	}
 
 	h1 {
 		position:relative;
-		left:25%;
+		left:10%; 
+		font-size:50px;
 	}
 
 	#centrage1 {
@@ -77,6 +84,8 @@ test        test voila</pre>
 	#centrage2 {
 	position:relative;
 	left:35%;
+	background-color: rgb(31, 31, 31);
+	margin-right:71%;
 }
 	.logo {
 		height:100px;
@@ -89,7 +98,7 @@ test        test voila</pre>
 
 	td {
     /* border: 3px solid rgb(190, 190, 190); */
-    padding: 10px;
+    padding: 5px;
 }
 	
 	.Twitter {
@@ -131,8 +140,9 @@ test        test voila</pre>
   100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
 }
 
-table::before,
-table::after {
+#centrage2::before,
+#centrage2::after {
+  filter:blur(20px);
   content: '';
   position: absolute;
   top: 0;
@@ -144,6 +154,12 @@ table::after {
   z-index: -1;
   background-size: 500%;
   animation: animate 20s infinite;
+}
+
+@keyframes animate {
+	0% {background-position: 0 0;}
+	50% {background-position: 300% 0;}
+	100% {background-position: 0 0;}
 }
 
 </style>
