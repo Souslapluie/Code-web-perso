@@ -112,9 +112,15 @@ le virus à la fin du temps imparti).  </pre>
 pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La boucle...  </pre> </div> 
 <img id="boucle" src="https://image.noelshack.com/fichiers/2020/15/2/1586276204-laboucle2.png" onclick="toto('bleu');">
 
-<!-- balise <iframe> = code venant de Youtube, de l'onglet "partager" puis "intégrer" puis copier / coller, permettant d'implanter une vidéo sur la page avec des options de Youtube, l'objectif futur étant de faire en sorte qu'uniquement la musique ne soit retenue pour qu'elle se lance automatiquement à l'ouverture de la page, avec possibilité de couper la musique, peut-être en Javascript -->
+  <?php
 
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VtguFyOdj2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ( = Code pour afficher vidéo youtube à la page ) -->
+  ?>
+
+<form id="Q" action="" method="post">
+	<p>Votre nom : <input type="text" name="nom" /></p>
+ <p>Votre âge : <input type="text" name="age" /></p>
+ <p><input type="submit" value="OK"></p>
+</form>
 
 <!-- Balise </br> = saut de ligne, mettre plusieurs fois la même balise dans la même ligne = plusieurs sauts de ligne -->
 
@@ -147,6 +153,9 @@ pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La b
 </br> </br>
 
 <a class="liens" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table"> <u> Lien pour faire des tableaux en HTML / CSS </u> </a>
+
+<a class="liens" href="https://www.youtube.com/watch?v=OK_JCtrrv-c&t=2263s"> <u> Chaîne youtube avec longues vidéos (ici lien pour PHP) </u> </a>
+
 
 
 <!-- Code CSS entre les balises <style> ... </style> : -->
@@ -203,6 +212,13 @@ div#encadré {
   color:black;
   background-color:purple;
   padding:3px;
+}
+
+#Q {
+   position:absolute;
+   bottom:200px;
+   left:450px;
+} 
 
 </style>
 
