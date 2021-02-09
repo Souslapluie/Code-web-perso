@@ -6,17 +6,17 @@
 </head>
 <body>
 
-	<div id="centrage1">
+	 <div id="centrage1">
 
 		<img class="logo" src="images/logo o'matik.png">
-		<img class="logo" src="images/OEUF.PNG"> </div>
+		<img class="logo" src="images/OEUF.PNG"> </div> 
 
 	<div id="centrage2">
 <table>
 
 		<thead>
 			<tr>
-				<th colspan="2"> Nuage partenaire "hover" </th>
+				<th colspan="2"> Nos partenaires : </th>
 			</tr>
 		</thead>
 
@@ -35,14 +35,16 @@
 
 </tbody> </table> </div>
 
+</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+
 <h1> <u> Présentation de la formation Tremplin Numérique </u> </h1>
 
-</br> </br> </br>
+	<a href="https://twitter.com/toulon_o"> <img id="Twitter" src="images/Twitter_bird.svg.png"> </a>
+	<a href="https://www.youtube.com/watch?v=qmRnuDwDtJg"> <img id="Facebook" src="images/LogoFB.jpg"> </a>
 
-<a href="https://twitter.com/toulon_o"> <img class="Twitter" src="images/Twitter_bird.svg.png"> </a>
-<a href="https://www.youtube.com/watch?v=qmRnuDwDtJg"> <img class="Facebook" src="images/LogoFB.jpg"> </a>
+<pre class="texte"> <h2> <i> Qui sommes-nous ? </i> </h2>
 
-<pre class="texte"> test test test tes t tes tes testes tes tes tes test ers test est 
+test test test tes t tes tes testes tes tes tes test ers test est 
 
 tete tes tvestesvtesvt tvesvt test tes t est est 
 
@@ -62,7 +64,7 @@ test        test voila </pre>
 	}
 
 	body {
-		background-color:black;
+		background-color:brown;
 		color:white;
 	}
 
@@ -70,9 +72,12 @@ test        test voila </pre>
 		border: 4mm ridge rgba(170, 50, 220, .6);
 	}
 
+   #centrage2 img:hover {
+   	transform: scale(1.23);
+   }
+
 	h1 {
-		position:relative;
-		left:10%; 
+		text-align:center;
 		font-size:50px;
 	}
 
@@ -82,7 +87,7 @@ test        test voila </pre>
 	}
 
 	#centrage2 {
-	position:relative;
+	position:absolute;
 	left:35%;
 	background-color: rgb(31, 31, 31);
 	margin-right:71%;
@@ -101,9 +106,12 @@ test        test voila </pre>
     padding: 5px;
 }
 	
-	.Twitter {
+	#Twitter {
 		height:50px;
 		width:50px;
+		position:relative;
+		left:400px;
+		top:100px;
 
 		-webkit-animation: spin 1.5s linear infinite;
   -moz-animation: spin 1.5s linear infinite;
@@ -121,9 +129,13 @@ test        test voila </pre>
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 
-	.Facebook {
+	#Facebook {
 		height:50px;
 		width:50px;
+		position:relative;
+		left:1030px;
+		top:100px;
+
 
 		-webkit-animation: spinda 1.5s linear infinite;
   -moz-animation: spinda 1.5s linear infinite;
@@ -142,7 +154,7 @@ test        test voila </pre>
 
 #centrage2::before,
 #centrage2::after {
-  filter:blur(20px);
+  filter:blur(5px);
   content: '';
   position: absolute;
   top: 0;
@@ -150,7 +162,7 @@ test        test voila </pre>
   background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
   width: 100%;
   height: 100%;
-  transform: scale(1.02);
+  transform: scale(1.03);
   z-index: -1;
   background-size: 500%;
   animation: animate 20s infinite;
