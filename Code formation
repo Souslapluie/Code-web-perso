@@ -107,7 +107,7 @@ Inspiration pour la page
 <style>
 
 	#END {
-		background-color:black;
+		background-color:#000011;
 		margin:-0.5%;
 	}
 
