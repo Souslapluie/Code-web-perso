@@ -3,8 +3,26 @@
 <head>
 	<meta charset="utf-8">
 <title> Parcours Tremplin Numérique : Toulon </title>
+<script> 
+
+	var cpt=0;
+	function Permut(){
+		
+		var uppercut = document.getElementById('Suite');
+		if (cpt%2 == 0 ){
+			uppercut.style.backgroundColor = "#A52A2A";
+			uppercut.style.color =  "black"; // "#4B0082"; // = Indigo
+		} else {
+ 			uppercut.style.backgroundColor = "#6A5ACD"; // = Violet Clair
+  			uppercut.style.color = "black";
+		}
+
+		cpt++;
+
+	}
+</script>
 </head>
-<body>
+<body onload = 'setInterval(function(){ Permut(); }, 500);'>
 
 	<img id="TLN" src="images/Toulon.jpg">
 
@@ -37,27 +55,76 @@
 
 </tbody> </table> </div>
 
-</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
 
-<h1> <u> Présentation de la formation Tremplin Numérique </u> </h1>
+			</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+
+
+					<h1> <u> Les Petits Débrouillards - Parcours Tremplin Numérique </u> </h1>
+<hr>
+
 
 	<a href="https://twitter.com/toulon_o"> <img id="Twitter" src="images/Twitter_bird.svg.png"> </a>
-	<a href="https://www.youtube.com/watch?v=qmRnuDwDtJg"> <img id="Facebook" src="images/LogoFB.jpg"> </a>
+	<a href="https://www.facebook.com/lespetitsdebrouillardsvar83"> <img id="Facebook" src="images/LogoFB.jpg"> </a>
 
 <pre class="texte"> <h2> <i> Qui sommes-nous ? </i> </h2>
-"Les Petits Débrouillards" est considéré comme un mouvement et / ou une association </br> ayant pour but le developpement de l'esprit critique, la remise en question <br/> de certaines de nos certitudes ainsi que d'une aide pour </br> l'intégration à la vie active.
 
-Présents dans de multiples pays et continents, 
+"<u>Les Petits Débrouillards</u>" est considéré comme un mouvement et / ou une association
+ayant pour but le developpement de l'esprit critique, la remise en question
+de certaines de nos certitudes ainsi que d'une aide pour
+l'intégration à la vie active.
+
+Présents dans de multiples pays et continents depuis 1986, 
+
 <h2> <i> Que faisons-nous ? </i> </h2>
+
 Dans cette formation, nous pouvons dire que nous sommes un peu "touche-à-tout" :
-Au fur et à mesure des séances, différentes branches de l'informatique sont <br/> explorées, afin que chacun puisse savoir ce qu'il préfère et, <br/> éventuellement, débuter des projets de plus en plus sérieux <br/> dans leur(s) domaine(s) favori(s). 
+Au fur et à mesure des séances, différentes branches de l'informatique sont
+explorées, afin que chacun puisse savoir ce qu'il préfère et, éventuellement, débuter des
+projets de plus en plus sérieux dans leur(s) domaine(s) favori(s). 
+
 <h2> <i> Notre équipe : </i> </h2>
-Les participants de cette formation "Parcours Tremplin Numérique" <br/> se situent dans la région PACA, dans le sud de la France. 
+
+Les participants de cette formation "Parcours Tremplin Numérique" se situent dans 
+la région PACA, dans le sud de la France. 
+
+ <h2> <i> Nos objectifs : </i> </h2>
+
+go muscu
 
 </pre>
 
+		<div id="END"> <br/> 
+
+<button id="Suite" onclick="window.location.href ='https://css-tricks.com/snippets/sass/black-white-opacity-mixins/';"> 
+Futur bouton "suivant"
+Site dans le bouton = 
+Inspiration pour la page
+
+</button> <br/> <br/>
+
+		</div>
 
 <style>
+
+	#END {
+		background-color:black;
+		margin:-0.5%;
+	}
+
+	#Suite {
+		white-space:pre;
+		margin-left:45%;
+		margin-right:50%;
+		border-radius:10px;
+		
+	}
+
+	hr { color:white;
+		background-color:black;
+		height:10px;
+		margin-right:-10px;
+		margin-left:-10px;
+	 }
 
 	.texte {
 		display:block;
@@ -71,6 +138,7 @@ Les participants de cette formation "Parcours Tremplin Numérique" <br/> se situ
 	body {
 		background-color:brown;
 		color:white;
+		overflow-x:hidden;
 	}
 
 	table {
@@ -115,7 +183,7 @@ Les participants de cette formation "Parcours Tremplin Numérique" <br/> se situ
 		z-index:-1;
 		position:absolute;
 		right:-0.5px;
-		height:65%;
+		height:68%;
 		width:150%;
 		margin-top:-25px;
 	}
@@ -125,7 +193,7 @@ Les participants de cette formation "Parcours Tremplin Numérique" <br/> se situ
 		width:50px;
 		position:absolute;
 		left:400px;
-		top:530px;
+		top:560px;
 
 		-webkit-animation: spin 1.5s linear infinite;
   -moz-animation: spin 1.5s linear infinite;
@@ -148,7 +216,7 @@ Les participants de cette formation "Parcours Tremplin Numérique" <br/> se situ
 		width:50px;
 		position:absolute;
 		left:1130px;
-		top:530px;
+		top:560px;
 		border-radius:5px;
 
 
