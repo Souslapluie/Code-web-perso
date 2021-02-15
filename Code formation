@@ -3,24 +3,39 @@
 <head>
 	<meta charset="utf-8">
 <title> Parcours Tremplin Numérique : Toulon </title>
-<script> 
+
+							<script> 
 
 	var cpt=0;
 	function Permut(){
 		
 		var uppercut = document.getElementById('Suite');
-		if (cpt%2 == 0 ){
-			uppercut.style.backgroundColor = "#A52A2A";
-			uppercut.style.color =  "black"; // "#4B0082"; // = Indigo
-		} else {
+
+			   if (cpt == 0){
+			uppercut.style.backgroundColor = "#A52A2A"; // = Marron	
+
+		} else if (cpt == 1) {
  			uppercut.style.backgroundColor = "#6A5ACD"; // = Violet Clair
-  			uppercut.style.color = "black";
-		}
+  		
+		} else if (cpt == 2) {
+			uppercut.style.backgroundColor = "#32CD32"; // = Vert foncé
+		
+		} else if (cpt == 3) {
+		  	uppercut.style.backgroundColor = "#FF1493"; // = Rose
+		
+		} else if (cpt == 4) {
+		  	uppercut.style.backgroundColor = "red";
+		
+		} else if (cpt == 5) {
+		  	uppercut.style.backgroundColor = "yellow";
 
-		cpt++;
+		} 	   if (cpt == 6) {
+			cpt = cpt - 7;
 
+		}  cpt++;					
 	}
-</script>
+
+							</script>
 </head>
 <body onload = 'setInterval(function(){ Permut(); }, 500);'>
 
@@ -108,15 +123,14 @@ Inspiration pour la page
 
 	#END {
 		background-color:#000011;
-		margin:-0.5%;
+		margin:-0.6%;
 	}
 
 	#Suite {
 		white-space:pre;
 		margin-left:45%;
 		margin-right:50%;
-		border-radius:10px;
-		
+		border-radius:10px;		
 	}
 
 	hr { color:white;
@@ -198,7 +212,6 @@ Inspiration pour la page
 		-webkit-animation: spin 1.5s linear infinite;
   -moz-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
-
 	}
 
 @-moz-keyframes spin {
@@ -257,8 +270,4 @@ Inspiration pour la page
 	100% {background-position: 0 0;}
 }
 
-</style>
-
-
-</body>
-</html>
+</style> </body> </html>
