@@ -70,10 +70,13 @@
 
 </tbody> </table> </div>
 
-				</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+
+			</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+
 
 					<h1> <u> Les Petits Débrouillards - Parcours Tremplin Numérique </u> </h1>
 <hr>
+
 
 	<a href="https://twitter.com/toulon_o"> <img id="Twitter" src="images/Twitter_bird.svg.png"> </a>
 	<a href="https://www.facebook.com/lespetitsdebrouillardsvar83"> <img id="Facebook" src="images/LogoFB.jpg"> </a>
@@ -149,7 +152,7 @@ Inspiration pour la page
 	body {
 		background-color:brown;
 		color:white;
-		overflow-x:hidden; 
+		overflow-x:hidden;
 	}
 
 	table {
@@ -174,10 +177,9 @@ Inspiration pour la page
 	#centrage2 {
 	position:absolute;
 	left:35%;
-	margin-right:71%; 
 	background-color: rgb(31, 31, 31);
+	margin-right:71%;
 }
-
 	.logo {
 		height:100px;
 		width:100px;
@@ -269,17 +271,45 @@ Inspiration pour la page
 }
 
 /* Taille de l'écran = https://fr.infobyip.com/detectdisplaysize.php
+   Conversion cm en px = https://www.blitzresults.com/fr/pixels/
+   Aide sup utile = https://www.electroguide.com/comment-connaitre-la-resolution-de-mon-ecra
 
 	  -	A la formation = Votre diagonale d'affichage est : 13.4" (34 cm)
-		Display dimensions, width x height: 11.7" x 6.6" (29.7 cm x 16.8 cm) 
+		Display dimensions, width x height: (29.7 cm x 16.8 cm) = 1366 px, + 654 px (testé manuellement)
 
 	  - Sur mon téléphone =  6cm x 10,5cm */
 
-	@media screen and (min-width: 500px) {
+	@media screen and (max-width: 1367px) {
 		#TLN {
-			height:82%;
-	}
-}
+			height:79%;
+	} } 
+
+	@media screen and (max-width: 1250px) {
+		h1 {
+			font-size:30px;
+		}
+
+		#TLN {
+			height:71%;
+		} }
+
+	@media screen and (max-width: 760px) {
+		h1 {
+			font-size:22px;
+		} 
+
+		#TLN {
+			height:69%;
+		}}
+
+	@media screen and (max-width: 650px) {
+		h1 {
+			font-size:18px;
+		}
+
+		#TLN {
+			height:67%;
+		} }
 
 	@media screen and (max-width: 500px) {
 
@@ -287,7 +317,9 @@ Inspiration pour la page
 			font-size:12px;
 		}
 
-		th {font-size:15px;}
+		th {
+			font-size:15px;
+	}
 
 		h1 {
 			font-size:20px;
@@ -314,4 +346,8 @@ Inspiration pour la page
 		}
 	} 
 
-</style> </body> </html>
+</style>
+
+
+</body>
+</html>
