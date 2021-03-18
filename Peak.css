@@ -1,0 +1,154 @@
+body {
+	background-image:url('Images/Peafond.jpg');
+	background-color:black;
+	background-repeat: no-repeat;
+    /* background-size:cover; */
+	color:white;
+	overflow-x:hidden;
+}
+
+#DescArm pre {
+	position:relative;
+	left:490px;
+	top:8px;
+	font-size:120%;
+	border-bottom-color:red;
+}
+#DescArm p {
+	position:relative;
+	left:600px;
+	color:white;
+}
+
+#Ymir {
+	position:absolute;
+	left:30px;
+	top:30px;
+}
+
+/* commande "font-size:" = taille du texte définie par la commande "15px;" qui définit le nombre de pixels */
+
+div.concu {
+	font-size:20px;
+	color:white;
+}
+	/* "position:absolute" + "top" + "right" = place l'élément à un endroit précis de la page, mais est problématique car la taille de l'écran n'est pas la même pour tous les ordinateurs, l'objectif futur étant de corriger ça, probablement avec le "reponsive design" et les requêtes CSS "media" */
+
+#sauts {
+  background-color:black;
+  color:#B22222;
+  white-space:pre; 
+  position:absolute;
+  font-size:20px;
+  top:2px;
+  right:95px;
+}                                                                                                            
+
+   /* "height" = hauteur, "width" = largeur */
+
+img#boucle {
+	height:250px;
+	width:400px;
+	position:relative;
+	top:20px;
+	left:447px;
+}
+
+/* "padding" = contour du texte avec la couleur de "background-color" 
+    "margin-..." = utilisé pour que le contour du texte ne fasse pas toute la largeur de la page */
+
+div#encadré {
+	color:white;
+    padding:0.5px;
+	background-color:black;
+	text-align:center;
+	margin-left:35%;
+	margin-right:35%;
+	position:relative;
+	bottom:5px;
+	right:275px;
+} 
+
+.liens {
+  color:black;
+  background-color:purple;
+  padding:3px;
+}
+
+#QandA {
+   position:absolute;
+   bottom:500px;
+   left:1500px;
+   color:black;
+} 
+
+#fondessous {
+	background-color:black;
+	width:120%;
+	margin:-2%;
+	border-top:50%;
+	padding-left:50px;
+	font-size:120%;
+}
+
+#fondessous h1 {
+	position:relative;
+	bottom:15px;
+	left:15px;
+}
+
+#fondessous hr {
+	padding:5px;
+	background-color:black;
+	margin:-2%;
+} 
+
+#ImgPeak1 {
+	position:absolute;
+	height:700px;
+	width:425px;
+}
+
+#Col {
+	color:white;
+	position:absolute;
+	left:308.5px;
+	bottom:77px;
+}
+
+#TopoArm {
+	z-index:-1;
+	position:absolute;
+	left:430px;
+	background-color:black;
+	height:350px;
+	width:450px;
+}
+
+
+
+#Multibar::before,
+#Multibar::after {
+  filter:blur(50px);
+  content: '';
+  position: absolute;
+  background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+  width: 100%;
+  height: 100%;
+  transform: scale(1.03);
+  z-index: -1;
+  background-size: 500%;
+  animation: animate 15s infinite;
+}
+
+@keyframes animate {
+	0% {background-position: 0 0;}
+	50% {background-position: 300% 0;}
+	100% {background-position: 0 0;}
+}
+
+
+
+
+
+
