@@ -12,7 +12,7 @@
 
 - Faire en sorte que le site soit acceptable aussi bien sur mobile que sur ordinateur (reponsive design / media queries) (le code "position:absolute" n'est pas adapté lorsqu'on veut afficher sur un maximum d'écran, il est possible qu'il va falloir enlever ce code pour le remplacer)
 
-- Faire en sorte que la tête du personnage soit visible sur l'image de fond , plusieurs paramètres entrent en compte comme la taille de l'écran avec la taille affichée de l'image de fond, peut-être mettre des colonnes dans la page pour que le texte reste cadré
+㉿ - Faire en sorte que la tête du personnage soit visible sur l'image de fond , plusieurs paramètres entrent en compte comme la taille de l'écran avec la taille affichée de l'image de fond, peut-être mettre des colonnes dans la page pour que le texte reste cadré ㉿
 
 - Retirer la vidéo Youtube et ne garder que la musique pour l'implanter dans le site lors de l'ouverture de la page ("onload" en javascript pour ouverture de la page), et mettre un bouton permettant d'arrêter la musique (Nom de la musique = Ymir theme)
 
@@ -24,11 +24,11 @@
 
 - Faire des formulaires avec des questionnaires dans une autre page dédiée référencée sur le site, soit sous forme de bouton soit sous forme de texte à écrire, et récupérer les données en utilisant PHP et les stocker avec le SQL afin de cumuler les résultats tout en mettant la possibilité de voir qui a posté (pour les gens chauds)
 
-- Mettre l'obligation de créer un compte avant de répondre aux questions (avec juste pseudo / mot de passe) (ne pas mettre son vrai mot de passe parce que je suis méchant et mettre votre vrai mot de passe sur ce site vous mettra à -2000€ sur le compte en banque askip)
+- Mettre l'obligation de créer un compte avant de répondre aux questions (avec juste pseudo / mot de passe) ( préciser de ne pas mettre son vrai mot de passe du coup)
 
 - Faire en sorte que le site se souvienne du mot de passe à la place de l'utilisateur, et lui proposer de l'écrire automatiquement en cliquant sur "oui" lorsqu'il cliquera sur le formulaire où il rentre ses informations
 
-- Chiffrer le mot de passe, par exemple en md5 ou autre, ou même créer son propre algorithme de chiffrage avec clé de chiffrement si voulu
+- Chiffrer le mot de passe, par exemple en md5 ou sha256 ou autre, ou même créer son propre algorithme de chiffrage avec clé de chiffrement si voulu
 
 - Lorsqu'on appuie sur Ctrl (gauche) + molette de la souris, et qu'on dé-zoom, le gros texte encadré du milieu se déforme et on voit que l'image de fond est en multiples exemplaires pour recouvrir toute la page, voir si le texte qui se déforme est problématique et comment faire pour que l'image de fond n'aparaisse qu'une fois, pour mettre d'autres choses lorsqu'on aura la possibilité de scroll la page vers le bas
 
@@ -41,9 +41,9 @@
 <head>
 
 <meta charset="utf-8">
+<link rel="stylesheet" href="Peak.css">
 
-<!-- <link rel="stylesheet" href="trop stylé le parpaing frère.css">
-
+<!--
 (Possible de copier le CSS présent entre les balises <style>, pour pouvoir le mettre dans un bloc note ou un autre onglet avec 
 "Ctrl" + "n" pour séparer le CSS du reste et enlever les balises au bout de ces lignes pour que ça ne soit plus considéré comme un commentaire pour l'humain qui lit mais un code pour l'ordinateur) -->
 
@@ -83,7 +83,7 @@
 
 <!-- Balises <u> ... </u> = souligner le texte -->
 
-<div id="encadré"> <h1> <u> Peak, la plus belle femme ayant le titan le plus moche </u> </h1> </div>
+<div id="encadré"> <h1> <u>L'Attaque des Titans : Peak</u> </h1> </div>
 
 <!-- "controls" = mettre la barre pour gérer la musique, "loop" = musique se répète en boucle, "autoplay" = lance automatiquement la musique, mais ne fonctionne pas toujours à cause du navigateur décidant de bloquer la musique par défaut -->
 
@@ -108,117 +108,75 @@ le virus à la fin du temps imparti).  </pre>
 </br>
 <!-- Balises <s> ... </s> = Barrer un texte -->
 
-<div class="concu"> <pre> <s>Même si elle se fait probablement déboîter par Annie ou Mikasa, </s> elle n'en reste pas moins innofensive, 
-pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga. La boucle...  </pre> </div> 
-<img id="boucle" src="https://image.noelshack.com/fichiers/2020/15/2/1586276204-laboucle2.png" onclick="toto('bleu');">
+<div class="concu"> <pre><s>Même si elle se fait probablement déboîter par Annie ou Mikasa,</s> 
+elle n'en reste pas moins innofensive. 
 
-  <?php
+Pas comme Armin alors qu'il a le deuxième titan le plus puissant du manga.  </pre> </div> <br>
 
-  ?>
+<img id="ImgPeak1" src="Images/Peak.png">
 
-<form id="Q" action="" method="post">
-	<p>Votre nom : <input type="text" name="nom" /></p>
- <p>Votre âge : <input type="text" name="age" /></p>
+<div id="TopoArm"> </div> 
+<img id="boucle" src="Images/Armin.png" onclick="toto('bleu');">
+
+<div id="DescArm"> <pre><u>Petite image représentative de la</u>
+    <u>puissance physique d'Armin.</pre>
+		<p> 	( le chauve ) </u> </p> </div>
+
+<form id="QandA" action="" method="post">
+	<p>Votre pseudonyme : <input type="text" name="nom" /></p>
+ <p>Appuyer sur le bouton "OK" du dessous sera t-il </p> <p id="Col">|&nbsp;utile&nbsp;?</p>
+ <p>Votre avis : <input type="text" name="age" /> </p>
  <p><input type="submit" value="OK"></p>
 </form>
 
 <!-- Balise </br> = saut de ligne, mettre plusieurs fois la même balise dans la même ligne = plusieurs sauts de ligne -->
 
-</br></br>
+</br></br> </br></br> </br></br> </br></br> </br></br>  </br></br> </br></br> </br></br></br></br> </br></br> <hr id="Multibar"> </br></br> 
 
-<p> <u> Liens pour aider dans les recherches (Clic droit + "ouvrir dans un nouvel onglet" pour garder la page du site) : </u> </p>
 
-<a class="liens" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607616-utilisez-le-responsive-design-avec-les-media-queries"> <U> Lien pour faire en sorte que le site soit visible sur un maximum d'écrans (mobiles compris) avec "media query" et le "responsive design"  ici </U> </a> 
+<div id="fondessous"> <hr> <br/> <br/> <br/>   
 
-</br></br>
+<h1> <u>  Liens pour aider dans les recherches (Clic droit + "ouvrir dans un nouvel onglet" pour garder la page du site) : </u> </h1>
 
-<a class="liens" href="https://codepen.io/JefReb/pen/qXdmLm"> <U> ㉿ Lien pour faire clignoter un bouton en faisant passer en arrière puis en premier plan un élément ㉿ </U> </a>
-
-</br></br>
-
-<a class="liens" href="https://www.youtube.com/watch?v=2H602-zG62w"> <u> Lien Youtube pour les grilles pour placer précisément des éléments en CSS </u> </a>
+<a class="liens" href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607616-utilisez-le-responsive-design-avec-les-media-queries"> <U> - Lien pour faire en sorte que le site soit visible sur un maximum d'écrans (mobiles compris) avec "media query" et le "responsive design"  ici </U> </a> 
 
 </br></br>
 
-<a class="liens" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout"> <u> Lien non youtube pour les grilles en CSS, pour des infos pour placer des éléments sans devoir se taper les 30 mins de la vidéo, même si les deux peuvent aller ensemble </u> </a>
+<a class="liens" href="https://codepen.io/JefReb/pen/qXdmLm"> <U> ㉿ - Lien pour faire clignoter un bouton en faisant passer en arrière puis en premier plan un élément ㉿ </U> </a>
 
 </br></br>
 
-<a class="liens" href="https://www.jeuxvideo.com/forums/42-51-65182005-2-0-1-0-venez-apprendre-la-cybersecurite.htm"> <u> Lien pour se renseigner sur le chiffrement de mot de passe (descendre un peu la page) </u> </a>
+<a class="liens" href="https://www.youtube.com/watch?v=2H602-zG62w"> <u> - Lien Youtube pour les grilles pour placer précisément des éléments en CSS </u> </a>
+
+</br></br>
+
+<a class="liens" href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout"> <u> - Lien non youtube pour les grilles en CSS, pour des infos pour placer des éléments sans devoir se taper les 30 mins de la vidéo, même si les deux peuvent aller ensemble </u> </a>
+
+</br></br>
+
+<a class="liens" href="https://www.jeuxvideo.com/forums/42-51-65182005-2-0-1-0-venez-apprendre-la-cybersecurite.htm"> <u> - Lien pour se renseigner sur le chiffrement de mot de passe (descendre un peu la page) </u> </a>
 
 </br> </br>
 
-<a class="liens" href="https://stackoverflow.com/questions/14356956/playing-audio-after-the-page-loads-in-html/14357365"> <u> Lien pour mettre une musique lors de l'ouverture de la page avec javascript </u> </a>
+<a class="liens" href="https://stackoverflow.com/questions/14356956/playing-audio-after-the-page-loads-in-html/14357365"> <u>㉿ - Lien pour mettre une musique lors de l'ouverture de la page avec javascript ㉿</u> </a>
 
 </br> </br>
 
-<a class="liens" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table"> <u> Lien pour faire des tableaux en HTML / CSS </u> </a>
+<a class="liens" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table"> <u> - Lien pour faire des tableaux en HTML / CSS </u> </a>
 
-<a class="liens" href="https://www.youtube.com/watch?v=OK_JCtrrv-c&t=2263s"> <u> Chaîne youtube avec longues vidéos (ici lien pour PHP) </u> </a>
+</br> </br>
 
+<a class="liens" href="https://www.youtube.com/watch?v=OK_JCtrrv-c&t=2263s"> <u> - Chaîne youtube avec longues vidéos (ici lien pour PHP) </u> </a>
 
+</br> </br>
 
-<!-- Code CSS entre les balises <style> ... </style> : -->
+<a class="liens" href="https://www.pierre-giraud.com/liste-selecteurs-css-utilisation/"> <u> - Sélecteurs CSS pour manipuler plusieurs éléments à la fois </u> </a>
+
+</br> </br>
+
+</div>
 
 <style> 
-
-body {
-	background-image:url('https://i.pinimg.com/originals/d1/59/69/d15969a43e8d212fe7f0c92aad8dea94.jpg');
-	color:black;
-}
-
-#Ymir {
-	position:absolute;
-	left:70px;
-	top:40px;
-}
-/* commande "font-size:" = taille du texte définie par la commande "15px;" qui définit le nombre de pixels */
-
-div.concu {
-	font-size:15px;
-	color:black;
-}
-	/* "position:absolute" + "top" + "right" = place l'élément à un endroit précis de la page, mais est problématique car la taille de l'écran n'est pas la même pour tous les ordinateurs, l'objectif futur étant de corriger ça, probablement avec le "reponsive design" et les requêtes CSS "media" */
-
-#sauts {
-  background-color:black;
-  color:#B22222;
-  white-space:pre; 
-  position:absolute;
-  top:2px;
-  right:5px; }
-                                                                                                              
-
-   /* "height" = hauteur, "width" = largeur */
-
-img#boucle {
-	height:200px;
-	width:300px;
-}
-
-/* "padding" = contour du texte avec la couleur de "background-color" 
-    "margin-..." = utilisé pour que le contour du texte ne fasse pas toute la largeur de la page */
-
-div#encadré {
-	color:white;
-    padding:10px;
-	background-color:black;
-	text-align:center;
-	margin-left:25%;
-	margin-right:25%;
-} 
-
-.liens {
-  color:black;
-  background-color:purple;
-  padding:3px;
-}
-
-#Q {
-   position:absolute;
-   bottom:200px;
-   left:450px;
-} 
 
 </style>
 
